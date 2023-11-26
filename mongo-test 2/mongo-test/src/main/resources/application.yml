@@ -1,0 +1,18 @@
+server:
+  port: 8088
+
+spring:
+  data:
+    mongodb:
+      #uri: mongodb://booth:ZGoarrp7cGV8VtZS@dds-uf6c109616b85d949562-pub.mongodb.rds.aliyuncs.com:3717,dds-uf6c109616b85d947194-pub.mongodb.rds.aliyuncs.com:3717,dds-uf6c109616b85d948964-pub.mongodb.rds.aliyuncs.com:3717,dds-uf6c109616b85d9411894-pub.mongodb.rds.aliyuncs.com:3717,dds-uf6c109616b85d943553-pub.mongodb.rds.aliyuncs.com:3717,dds-uf6c109616b85d946636-pub.mongodb.rds.aliyuncs.com:3717,dds-uf6c109616b85d9410121-pub.mongodb.rds.aliyuncs.com:3717,dds-uf6c109616b85d945326-pub.mongodb.rds.aliyuncs.com:3717,dds-uf6c109616b85d944870-pub.mongodb.rds.aliyuncs.com:3717,dds-uf6c109616b85d942351-pub.mongodb.rds.aliyuncs.com:3717,dds-uf6c109616b85d941699-pub.mongodb.rds.aliyuncs.com:3717/admin?replicaSet=mgset-73067374
+      #有多个节点，每个节点都需要配置线程池参数，此处演示一个节点
+      uri: mongodb://booth:ZGoarrp7cGV8VtZS@dds-uf6c109616b85d949562-pub.mongodb.rds.aliyuncs.com:3717/admin?replicaSet=mgset-73067374&minPoolSize=20&maxPoolSize=200
+      #uri: mongodb://booth:ZGoarrp7cGV8VtZS@dds-uf6c109616b85d949562-pub.mongodb.rds.aliyuncs.com:3717/admin?replicaSet=mgset-73067374&minPoolSize=2&maxPoolSize=10
+      authentication-database: admin
+      database: omnisheet
+      #链接池配置
+      min-connections-per-host: 10
+      max-connections-per-host: 100
+      #线程池配置
+      connections-per-host: 100
+      threads-allowed-to-block-for-connection-multiplier: 20

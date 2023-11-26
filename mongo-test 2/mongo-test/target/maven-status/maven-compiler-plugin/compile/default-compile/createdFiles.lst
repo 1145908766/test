@@ -1,0 +1,8 @@
+com/omni/mongotest/model/BaseEmpty.class
+com/omni/mongotest/MongoController.class
+com/omni/mongotest/manager/ExecManager.class
+com/omni/mongotest/model/Grain.class
+com/omni/mongotest/model/other/TextDoc.class
+com/omni/mongotest/utils/CodeUtils.class
+com/omni/mongotest/model/PolDoc.class
+com/omni/mongotest/MongoTestApplication.class
